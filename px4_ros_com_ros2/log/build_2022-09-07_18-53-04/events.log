@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000552] (dasc_robot_py) JobQueued: {'identifier': 'dasc_robot_py', 'dependencies': OrderedDict()}
+[0.000666] (px4_msgs) JobQueued: {'identifier': 'px4_msgs', 'dependencies': OrderedDict()}
+[0.000710] (vicon_receiver) JobQueued: {'identifier': 'vicon_receiver', 'dependencies': OrderedDict()}
+[0.000741] (px4_ros_com) JobQueued: {'identifier': 'px4_ros_com', 'dependencies': OrderedDict([('px4_msgs', '/root/px4_ros_com_ros2/install/px4_msgs')])}
+[0.000800] (vicon_px4_bridge) JobQueued: {'identifier': 'vicon_px4_bridge', 'dependencies': OrderedDict([('px4_msgs', '/root/px4_ros_com_ros2/install/px4_msgs'), ('vicon_receiver', '/root/px4_ros_com_ros2/install/vicon_receiver')])}
+[0.000824] (dasc_robot) JobQueued: {'identifier': 'dasc_robot', 'dependencies': OrderedDict([('px4_msgs', '/root/px4_ros_com_ros2/install/px4_msgs'), ('px4_ros_com', '/root/px4_ros_com_ros2/install/px4_ros_com')])}
+[0.001866] (px4_msgs) JobStarted: {'identifier': 'px4_msgs'}
+[0.011909] (vicon_receiver) JobStarted: {'identifier': 'vicon_receiver'}
+[0.020167] (dasc_robot_py) JobStarted: {'identifier': 'dasc_robot_py'}
+[0.029992] (px4_msgs) JobProgress: {'identifier': 'px4_msgs', 'progress': 'cmake'}
+[0.030556] (px4_msgs) Command: {'cmd': ['/usr/bin/cmake', '/root/px4_ros_com_ros2/src/px4_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/root/px4_ros_com_ros2/install/px4_msgs'], 'cwd': '/root/px4_ros_com_ros2/build/px4_msgs', 'env': OrderedDict([('HOSTNAME', 'dasc-ThinkPad-P50'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/px4_ros_com_ros2/install/px4_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib::/usr/local/lib/'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('CCACHE_UMASK', '000'), ('COLCON_PREFIX_PATH', '/root/px4_ros_com_ros2/install'), ('ROS_DISTRO', 'galactic'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/galactic/bin:/usr/lib/ccache:/opt/gradle/gradle-6.3-rc-4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/root/px4_ros_com_ros2/super_client_configuration_file.xml'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('FASTRTPSGEN_DIR', '/usr/local/bin/'), ('AMENT_PREFIX_PATH', '/root/px4_ros_com_ros2/install/px4_msgs:/root/px4_ros_com_ros2/install/dasc_robot_py:/opt/ros/galactic'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISCOVERY_SERVER', '192.168.2.132:11811'), ('PWD', '/root/px4_ros_com_ros2/build/px4_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/px4_ros_com_ros2/src/robot-framework-py:'), ('TZ', 'UTC'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/px4_ros_com_ros2/install/px4_msgs:/root/px4_ros_com_ros2/install/dasc_robot_py:/opt/ros/galactic')]), 'shell': False}
+[0.036550] (vicon_receiver) JobProgress: {'identifier': 'vicon_receiver', 'progress': 'cmake'}
+[0.039367] (vicon_receiver) Command: {'cmd': ['/usr/bin/cmake', '/root/px4_ros_com_ros2/src/ros2-vicon-receiver/vicon_receiver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/root/px4_ros_com_ros2/install/vicon_receiver'], 'cwd': '/root/px4_ros_com_ros2/build/vicon_receiver', 'env': OrderedDict([('HOSTNAME', 'dasc-ThinkPad-P50'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/px4_ros_com_ros2/install/px4_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib::/usr/local/lib/'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('CCACHE_UMASK', '000'), ('COLCON_PREFIX_PATH', '/root/px4_ros_com_ros2/install'), ('ROS_DISTRO', 'galactic'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/galactic/bin:/usr/lib/ccache:/opt/gradle/gradle-6.3-rc-4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/root/px4_ros_com_ros2/super_client_configuration_file.xml'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('FASTRTPSGEN_DIR', '/usr/local/bin/'), ('AMENT_PREFIX_PATH', '/root/px4_ros_com_ros2/install/px4_msgs:/root/px4_ros_com_ros2/install/dasc_robot_py:/opt/ros/galactic'), ('DEBIAN_FRONTEND', 'noninteractive'), ('ROS_DISCOVERY_SERVER', '192.168.2.132:11811'), ('PWD', '/root/px4_ros_com_ros2/build/vicon_receiver'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/px4_ros_com_ros2/src/robot-framework-py:'), ('TZ', 'UTC'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/px4_ros_com_ros2/install/px4_msgs:/root/px4_ros_com_ros2/install/dasc_robot_py:/opt/ros/galactic')]), 'shell': False}
+[0.099010] (-) TimerEvent: {}
+[0.118410] (px4_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.123861] (vicon_receiver) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.3.0\n'}
+[0.198341] (px4_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[0.198693] (vicon_receiver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.3.0\n'}
+[0.199037] (-) TimerEvent: {}
+[0.204251] (vicon_receiver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc\n'}
+[0.204554] (px4_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc\n'}
+[0.299141] (-) TimerEvent: {}
+[0.327584] (dasc_robot_py) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--prefix', '/root/px4_ros_com_ros2/install/dasc_robot_py', '--editable', '--build-directory', '/root/px4_ros_com_ros2/build/dasc_robot_py/build', '--no-deps', 'install_data', '--install-dir', '/root/px4_ros_com_ros2/install/dasc_robot_py'], 'cwd': '/root/px4_ros_com_ros2/build/dasc_robot_py', 'env': {'HOSTNAME': 'dasc-ThinkPad-P50', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/root/px4_ros_com_ros2/install/px4_msgs/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib::/usr/local/lib/', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'CCACHE_UMASK': '000', 'COLCON_PREFIX_PATH': '/root/px4_ros_com_ros2/install', 'ROS_DISTRO': 'galactic', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/galactic/bin:/usr/lib/ccache:/opt/gradle/gradle-6.3-rc-4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/root/px4_ros_com_ros2/super_client_configuration_file.xml', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'FASTRTPSGEN_DIR': '/usr/local/bin/', 'AMENT_PREFIX_PATH': '/root/px4_ros_com_ros2/install/px4_msgs:/root/px4_ros_com_ros2/install/dasc_robot_py:/opt/ros/galactic', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_DISCOVERY_SERVER': '192.168.2.132:11811', 'PWD': '/root/px4_ros_com_ros2/build/dasc_robot_py', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/root/px4_ros_com_ros2/install/dasc_robot_py/lib/python3.8/site-packages:/root/px4_ros_com_ros2/src/robot-framework-py:', 'TZ': 'UTC', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/px4_ros_com_ros2/install/px4_msgs'}, 'shell': False}
+[0.399244] (-) TimerEvent: {}
+[0.442216] (px4_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc -- works\n'}
+[0.443207] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.491693] (vicon_receiver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc -- works\n'}
+[0.492740] (vicon_receiver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.499343] (-) TimerEvent: {}
+[0.586468] (dasc_robot_py) StdoutLine: {'line': b'running develop\n'}
+[0.599483] (-) TimerEvent: {}
+[0.672215] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.672413] (vicon_receiver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.687298] (vicon_receiver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.687698] (vicon_receiver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.687928] (dasc_robot_py) StdoutLine: {'line': b'running egg_info\n'}
+[0.688058] (dasc_robot_py) StdoutLine: {'line': b'creating dasc_robot_py.egg-info\n'}
+[0.688267] (dasc_robot_py) StdoutLine: {'line': b'writing dasc_robot_py.egg-info/PKG-INFO\n'}
+[0.688353] (dasc_robot_py) StdoutLine: {'line': b'writing dependency_links to dasc_robot_py.egg-info/dependency_links.txt\n'}
+[0.688456] (dasc_robot_py) StdoutLine: {'line': b'writing entry points to dasc_robot_py.egg-info/entry_points.txt\n'}
+[0.688789] (dasc_robot_py) StdoutLine: {'line': b'writing requirements to dasc_robot_py.egg-info/requires.txt\n'}
+[0.689026] (dasc_robot_py) StdoutLine: {'line': b'writing top-level names to dasc_robot_py.egg-info/top_level.txt\n'}
+[0.689932] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.690525] (vicon_receiver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++\n'}
+[0.690731] (px4_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.690911] (dasc_robot_py) StdoutLine: {'line': b"writing manifest file 'dasc_robot_py.egg-info/SOURCES.txt'\n"}
+[0.693183] (dasc_robot_py) StdoutLine: {'line': b"reading manifest file 'dasc_robot_py.egg-info/SOURCES.txt'\n"}
+[0.694251] (dasc_robot_py) StdoutLine: {'line': b"writing manifest file 'dasc_robot_py.egg-info/SOURCES.txt'\n"}
+[0.695136] (px4_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++\n'}
+[0.699583] (-) TimerEvent: {}
+[0.740966] (dasc_robot_py) StdoutLine: {'line': b'running build_ext\n'}
+[0.741266] (dasc_robot_py) StdoutLine: {'line': b'Creating /root/px4_ros_com_ros2/install/dasc_robot_py/lib/python3.8/site-packages/dasc-robot-py.egg-link (link to .)\n'}
+[0.742096] (dasc_robot_py) StdoutLine: {'line': b'Installing ex_drone_control_geometric script to /root/px4_ros_com_ros2/install/dasc_robot_py/lib/dasc_robot_py\n'}
+[0.742295] (dasc_robot_py) StdoutLine: {'line': b'Installing ex_drone_hover script to /root/px4_ros_com_ros2/install/dasc_robot_py/lib/dasc_robot_py\n'}
+[0.742446] (dasc_robot_py) StdoutLine: {'line': b'Installing ex_rover_test script to /root/px4_ros_com_ros2/install/dasc_robot_py/lib/dasc_robot_py\n'}
+[0.742531] (dasc_robot_py) StdoutLine: {'line': b'Installing ex_rover_test_classes script to /root/px4_ros_com_ros2/install/dasc_robot_py/lib/dasc_robot_py\n'}
+[0.742688] (dasc_robot_py) StdoutLine: {'line': b'\n'}
+[0.742840] (dasc_robot_py) StdoutLine: {'line': b'Installed /root/px4_ros_com_ros2/build/dasc_robot_py\n'}
+[0.742957] (dasc_robot_py) StdoutLine: {'line': b'running install_data\n'}
+[0.743054] (dasc_robot_py) StdoutLine: {'line': b'creating /root/px4_ros_com_ros2/install/dasc_robot_py/share/ament_index\n'}
+[0.743150] (dasc_robot_py) StdoutLine: {'line': b'creating /root/px4_ros_com_ros2/install/dasc_robot_py/share/ament_index/resource_index\n'}
+[0.743224] (dasc_robot_py) StdoutLine: {'line': b'creating /root/px4_ros_com_ros2/install/dasc_robot_py/share/ament_index/resource_index/packages\n'}
+[0.743298] (dasc_robot_py) StdoutLine: {'line': b'copying resource/dasc_robot_py -> /root/px4_ros_com_ros2/install/dasc_robot_py/share/ament_index/resource_index/packages\n'}
+[0.743372] (dasc_robot_py) StdoutLine: {'line': b'copying package.xml -> /root/px4_ros_com_ros2/install/dasc_robot_py/share/dasc_robot_py\n'}
+[0.770716] (dasc_robot_py) CommandEnded: {'returncode': 0}
+[0.786589] (dasc_robot_py) JobEnded: {'identifier': 'dasc_robot_py', 'rc': 0}
+[0.799779] (-) TimerEvent: {}
+[0.900392] (-) TimerEvent: {}
+[0.992802] (px4_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ -- works\n'}
+[0.994181] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.000512] (-) TimerEvent: {}
+[1.012441] (vicon_receiver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ -- works\n'}
+[1.013778] (vicon_receiver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.100777] (-) TimerEvent: {}
+[1.201389] (-) TimerEvent: {}
+[1.224978] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.225160] (vicon_receiver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.239468] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.239982] (vicon_receiver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.240107] (px4_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.240589] (vicon_receiver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.241783] (px4_msgs) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX17\n'}
+[1.243690] (vicon_receiver) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[1.272698] (vicon_receiver) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[1.272882] (vicon_receiver) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.301512] (-) TimerEvent: {}
+[1.302386] (vicon_receiver) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.302563] (vicon_receiver) StderrLine: {'line': b'  File "/opt/ros/galactic/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[1.302645] (vicon_receiver) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[1.302718] (vicon_receiver) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[1.305688] (vicon_receiver) StderrLine: {'line': b'CMake Error at /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[1.305869] (vicon_receiver) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[1.305951] (vicon_receiver) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[1.306027] (vicon_receiver) StderrLine: {'line': b'  /root/px4_ros_com_ros2/build/vicon_receiver/ament_cmake_package_templates/templates.cmake)\n'}
+[1.306100] (vicon_receiver) StderrLine: {'line': b'  returned error code 1\n'}
+[1.306171] (vicon_receiver) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.306240] (vicon_receiver) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[1.306310] (vicon_receiver) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[1.306378] (vicon_receiver) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[1.306446] (vicon_receiver) StderrLine: {'line': b'  CMakeLists.txt:24 (find_package)\n'}
+[1.306515] (vicon_receiver) StderrLine: {'line': b'\n'}
+[1.306586] (vicon_receiver) StderrLine: {'line': b'\n'}
+[1.306788] (vicon_receiver) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.306904] (vicon_receiver) StdoutLine: {'line': b'See also "/root/px4_ros_com_ros2/build/vicon_receiver/CMakeFiles/CMakeOutput.log".\n'}
+[1.310257] (vicon_receiver) CommandEnded: {'returncode': 1}
+[1.333348] (vicon_receiver) JobEnded: {'identifier': 'vicon_receiver', 'rc': 1}
+[1.401661] (-) TimerEvent: {}
+[1.407671] (px4_msgs) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX17 - Success\n'}
+[1.408613] (px4_msgs) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX14\n'}
+[1.501961] (-) TimerEvent: {}
+[1.602508] (-) TimerEvent: {}
+[1.603055] (px4_msgs) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX14 - Success\n'}
+[1.603930] (px4_msgs) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX11\n'}
+[1.702684] (-) TimerEvent: {}
+[1.800024] (px4_msgs) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX11 - Success\n'}
+[1.800796] (px4_msgs) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX0X\n'}
+[1.802766] (-) TimerEvent: {}
+[1.903116] (-) TimerEvent: {}
+[2.003692] (-) TimerEvent: {}
+[2.023167] (px4_msgs) StdoutLine: {'line': b'-- Performing Test COMPILER_SUPPORTS_CXX0X - Success\n'}
+[2.023439] (px4_msgs) StdoutLine: {'line': b'-- Using C++17 compiler\n'}
+[2.025349] (px4_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.4 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[2.053628] (px4_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.053824] (px4_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.082110] (px4_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.082358] (px4_msgs) StderrLine: {'line': b'  File "/opt/ros/galactic/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[2.082503] (px4_msgs) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[2.082633] (px4_msgs) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[2.085747] (px4_msgs) StderrLine: {'line': b'CMake Error at /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[2.086014] (px4_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[2.086161] (px4_msgs) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[2.086295] (px4_msgs) StderrLine: {'line': b'  /root/px4_ros_com_ros2/build/px4_msgs/ament_cmake_package_templates/templates.cmake)\n'}
+[2.086421] (px4_msgs) StderrLine: {'line': b'  returned error code 1\n'}
+[2.086542] (px4_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.086663] (px4_msgs) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[2.086780] (px4_msgs) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[2.086895] (px4_msgs) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[2.087029] (px4_msgs) StderrLine: {'line': b'  CMakeLists.txt:13 (find_package)\n'}
+[2.087161] (px4_msgs) StderrLine: {'line': b'\n'}
+[2.087289] (px4_msgs) StderrLine: {'line': b'\n'}
+[2.087486] (px4_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.087621] (px4_msgs) StdoutLine: {'line': b'See also "/root/px4_ros_com_ros2/build/px4_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[2.091103] (px4_msgs) JobEnded: {'identifier': 'px4_msgs', 'rc': 'SIGINT'}
+[2.102251] (px4_ros_com) JobSkipped: {'identifier': 'px4_ros_com'}
+[2.102311] (vicon_px4_bridge) JobSkipped: {'identifier': 'vicon_px4_bridge'}
+[2.102339] (dasc_robot) JobSkipped: {'identifier': 'dasc_robot'}
+[2.102362] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+/root/px4_ros_com_ros2/src/ros2-vicon-receiver/vicon_receiver/msg/Position.msg

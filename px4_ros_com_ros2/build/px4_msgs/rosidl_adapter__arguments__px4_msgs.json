@@ -1,0 +1,30 @@
+{
+  "package_name": "px4_msgs",
+  "non_idl_tuples": [
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/BatteryStatus.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/DebugArray.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/DebugKeyValue.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/DebugValue.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/DebugVect.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/ExternalController.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/GpsInjectData.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/ManualControlSetpoint.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/OffboardControlMode.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/SensorCombined.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/SensorGps.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/Timesync.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/TimesyncStatus.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/TrajectorySetpoint.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleAttitude.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleAttitudeSetpoint.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleCommand.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleControlMode.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleGpsPosition.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleLocalPosition.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleLocalPositionSetpoint.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleOdometry.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleRatesSetpoint.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleStatus.msg",
+    "/root/px4_ros_com_ros2/src/px4_msgs:msg/VehicleVisualOdometry.msg"
+  ]
+}
