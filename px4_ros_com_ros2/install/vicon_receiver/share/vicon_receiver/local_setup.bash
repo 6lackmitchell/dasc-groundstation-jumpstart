@@ -1,1 +1,0 @@
-/root/px4_ros_com_ros2/build/vicon_receiver/ament_cmake_environment_hooks/local_setup.bash

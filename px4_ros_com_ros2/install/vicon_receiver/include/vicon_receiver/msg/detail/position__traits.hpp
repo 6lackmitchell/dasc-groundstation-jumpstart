@@ -1,1 +1,0 @@
-/root/px4_ros_com_ros2/build/vicon_receiver/rosidl_generator_cpp/vicon_receiver/msg/detail/position__traits.hpp

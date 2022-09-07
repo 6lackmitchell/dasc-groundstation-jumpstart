@@ -1,1 +1,0 @@
-Invoking command in '/root/px4_ros_com_ros2/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/px4_ros_com_ros2/install/dasc_robot_py:/opt/ros/galactic /usr/bin/cmake /root/px4_ros_com_ros2/src/px4_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/px4_ros_com_ros2/install/px4_msgs

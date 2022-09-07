@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/root/px4_ros_com_ros2/build/vicon_receiver/libvicon_receiver__rosidl_typesupport_fastrtps_c.so" "TARGETS" "vicon_receiver__rosidl_typesupport_fastrtps_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

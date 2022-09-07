@@ -1,6 +1,0 @@
-{
-  "package_name": "vicon_receiver",
-  "non_idl_tuples": [
-    "/root/px4_ros_com_ros2/src/ros2-vicon-receiver/vicon_receiver:msg/Position.msg"
-  ]
-}

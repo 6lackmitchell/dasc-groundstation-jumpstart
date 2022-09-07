@@ -1,2 +1,0 @@
-/root/px4_ros_com_ros2/install/dasc_robot/lib/dasc_robot/libdascBots.a
-/root/px4_ros_com_ros2/install/dasc_robot/lib/dasc_robot/libdasc_robot_lib.so

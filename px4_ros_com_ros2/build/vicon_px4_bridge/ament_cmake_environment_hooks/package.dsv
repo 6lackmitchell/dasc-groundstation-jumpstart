@@ -1,4 +1,0 @@
-source;share/vicon_px4_bridge/local_setup.bash
-source;share/vicon_px4_bridge/local_setup.dsv
-source;share/vicon_px4_bridge/local_setup.sh
-source;share/vicon_px4_bridge/local_setup.zsh
