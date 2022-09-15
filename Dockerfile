@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y libgmp3-dev
 
 # install additional dependencies
 #RUN python3 -m pip install --upgrade ortools cvxpy pandas tqdm pypoman gurobipy
+RUN python3 -m pip install --upgrade nptyping cvxopt transformations symengine sympy control scipy
 
 
 RUN echo 'PYTHONPATH=/root/px4_ros_com_ros2/src/robot-framework-py:${PYTHONPATH}' >> ~/.bashrc

@@ -16,3 +16,6 @@
 [submodule "px4_ros_com_ros2/src/vicon_px4_bridge"]
 	path = px4_ros_com_ros2/src/vicon_px4_bridge
 	url = https://github.com/dasc-lab/vicon_px4_bridge
+[submodule "px4_ros_com_ros2/src/intersection"]
+	path = px4_ros_com_ros2/src/intersection
+	url = git@github.com:6lackmitchell/intersection.git
